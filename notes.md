@@ -46,19 +46,25 @@ const word = "HI THERE!!"
 1. make a character map out of both strings you're given
 
 
+Iterating, for loops:
+* over Obj => use let IN
+--- for(let char in __ )
 
+* over array => use let OF
+--- for(let char of __ )
 
+* a regular for loop
+- for (let i = 1; i < str.length; i++)
 
-
-
-
-
-
+Dif. loop types:
 
 Methods to remember:
-Math.sign(x) > returns 1 if positive and -1 if negative
+* array.sort();
+- belongs to arrays, not strings.. so you would need to split and then join if you were dealing with a string
+- .split('').sort().join('')
 
-parseInt(myNumber.toString()) / 2000 > takes a string and returns a number
-
-array.toString()
-array.split('').join
+* str.slice(beginIndex, endIndex)
+* Math.sign(x) > returns 1 if positive and -1 if negative
+* parseInt(myNumber.toString()) / 2000 > takes a string and returns a number
+* array.toString()
+* array.split('').join
