@@ -97,3 +97,25 @@ function maxChar(str) {
     }
     return maxChar
 }
+
+//palindrome problem
+//USING ARRAY.EVERY
+// function palindrome(str) {
+
+//     return str.split('').every((char, i) => {
+//         //we're minusing 1 because our index starts at 0
+//         return char === str[str.length - i - 1];
+//     });
+// }
+
+//MAIN SOLUTION
+function palindrome(str) {
+    const newstr = str.split('').reverse().join('')
+
+    if (str === newstr ) {
+        return true
+    }
+
+        // more straightforward way of the if statement
+        // return str === newstr;
+}
