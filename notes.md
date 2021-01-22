@@ -68,3 +68,12 @@ Methods to remember:
 * parseInt(myNumber.toString()) / 2000 > takes a string and returns a number
 * array.toString()
 * array.split('').join
+
+12. Pyramid
+**every Recursive function has 2 parts:**
+
+1. base case- the stopping condition
+2. recursive call to that same function (usually with different arguments than what was passed in the first time).. you're basically starting the loop over, since the base case was not hit
+
+ebook on recursion:
+https://www.notion.so/Cracking-the-Coding-Interview-Udemyv-d791757110054c6095d16ab400adbe01#c44dc24653fc4da18b13e746ac83a036
