@@ -119,3 +119,17 @@ function palindrome(str) {
         // more straightforward way of the if statement
         // return str === newstr;
 }
+
+//working with chunks
+function chunk(array, size) {
+    //slice method... leters.slice(0,3) 3 is the element where we will stop, 0 is where we start the slice
+    const emptyArr = [];
+    let index = 0;
+
+    while (index < array.length) {
+        emptyArr.push(array.slice(index, index + size));
+        index += size;
+    }
+
+    return emptyArr;
+}
