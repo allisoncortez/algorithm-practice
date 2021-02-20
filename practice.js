@@ -9,9 +9,17 @@
 //   vowels('Why?') --> 0
 
 //iterative solution
-// function vowels(str){
+function vowels(str){
+    counter = 0
+    
+    for (char in str){
+        if(char.includes('aeiou')){
+            counter += 1 || 1
+        }
+    }
+    return counter
 
-// }
+}
 
 2.
 // --- Directions
@@ -84,6 +92,7 @@
 //   4
 //   buzz
 
+// // // SAT
 8.
 // --- Directions
 // Given an array and chunk size, divide the array into many subarrays
@@ -94,3 +103,97 @@
 // chunk([1, 2, 3, 4, 5, 6, 7, 8], 3) --> [[ 1, 2, 3], [4, 5, 6], [7, 8]]
 // chunk([1, 2, 3, 4, 5], 4) --> [[ 1, 2, 3, 4], [5]]
 // chunk([1, 2, 3, 4, 5], 10) --> [[ 1, 2, 3, 4, 5]]
+
+9.
+// --- Directions
+// Check to see if two provided strings are anagrams of eachother.
+// One string is an anagram of another if it uses the same characters
+// in the same quantity. Only consider characters, not spaces
+// or punctuation.  Consider capital letters to be the same as lower case
+// --- Examples
+//   anagrams('rail safety', 'fairy tales') --> True
+//   anagrams('RAIL! SAFETY!', 'fairy tales') --> True
+//   anagrams('Hi there', 'Bye there') --> False
+
+10.
+// --- Directions
+// Write a function that accepts a string.  The function should
+// capitalize the first letter of each word in the string then
+// return the capitalized string.
+// --- Examples
+//   capitalize('a short sentence') --> 'A Short Sentence'
+//   capitalize('a lazy fox') --> 'A Lazy Fox'
+//   capitalize('look, it is working!') --> 'Look, It Is Working!'
+
+11.
+// --- Directions
+// Write a function that accepts a positive number N.
+// The function should console log a step shape
+// with N levels using the # character.  Make sure the
+// step has spaces on the right hand side!
+// --- Examples
+//   steps(2)
+//       '# '
+//       '##'
+//   steps(3)
+//       '#  '
+//       '## '
+//       '###'
+//   steps(4)
+//       '#   '
+//       '##  '
+//       '### '
+//       '####'
+
+//SUNDAY
+12.
+// Given an array of integers, find if the array contains any duplicates.
+
+// Your function should return true if any value appears at least twice
+// in the array, and it should return false if every element is distinct.
+
+// Example1:
+// Input: [1,2,3,1]
+// Output: true
+
+// Example2:
+// Input: [1,2,3,4]
+// Output: false
+
+// Example3:
+// [1,1,1,3,3,4,3,2,4,2]
+// Output: true
+
+13.
+// Given a non-empty array of integers nums,
+// every element appears twice except for one. Find that single one.
+
+//Example1
+// Input: nums = [2,2,1]
+// Output: 1
+
+// Example2
+// Input: nums = [4,1,2,1,2]
+// Output: 4
+
+14.
+// Write a function that reverses a string. The input string is given as an array of characters char[].
+// Do not allocate extra space for another array, you must do this by modifying the input array in-place with O(1) extra memory.
+//Example
+// Input: ["h","e","l","l","o"]
+// Output: ["o","l","l","e","h"]
+
+var reverseString = function(s) {
+    let start = 0
+    let end = s.length - 1
+    
+    while(start < end){
+        let temp = s[start]
+        s[start] = s[end]
+        s[end] = temp
+        
+        start++
+        end--
+    }
+    
+};
